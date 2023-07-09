@@ -18,6 +18,7 @@ function cart(){
     var image=document.createElement('img');
     if(item[i]!=undefined)
     image.src="images/" + item[i]+ext;
+          console.log(image.src);
     image.style.marginRight="20px"
     image.style.width="100px";
     image.style.height="100px";

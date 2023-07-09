@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Point-Services
+    </title>
+    <link rel="shortcut icon" type="image/png" href="images/logo-transparent-png 2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="checkout()">
+  <heading>
+    <img src="images/logo-transparent-png.png" alt="logo" height="120px" width="320px" id="logo">
+ </heading>
+ <nav id="navigation">
+   <a class="navigationLinks" href="About.html">About</a>
+   <a class="navigationLinks" href="Services.html">Services</a>
+   <a class="navigationLinks" href="Your_Orders.html">Your Orders</a>
+   <a class="navigationLinks" href="Wishlists.html">Wishlists</a>
+   <a class="navigationLinks" href="Cart.html">Cart</a>
+   <a class="navigationLinks" href="Contact.html">Contact</a>
+   <a class="navigationLinks" href="Checkout.html">Checkout</a>
+</nav>
+    
+   
+        <h1 id="heading">Checkout</h1>
+        <div id="content">
+            <div id="content1" class="row">
+              <div class="col-lg-8 col-sm-12">
+                <div  class="container c">
+                  <form action="/action_page.php">
+                   <div class="row">
+                      <div class="col-lg-6">
+                          <h4>Billing address</h4>
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input type="text" id="email" name="email" placeholder="john@example.com">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="New York">
+                      
+                           <div class="row">
+                            <div class="col-lg-6">
+                              <label for="state">State</label>
+                              <input type="text" id="state" name="state" placeholder="Andhra Pradesh">
+                            </div>
+                            <div class="col-lg-6">
+                              <label for="zip">Zip code</label>
+                              <input type="text" id="zip" name="zip" placeholder="511111">
+                            </div>
+                            </div>
+                         
+                      </div>
+                      <div class="col-lg-6">
+                          <h4>Payment details</h4>
+                          <label for="cards">Accepted cards</label>
+                          <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy"></i>
+                            <i class="fa fa-cc-amex" style="color:blue"></i>
+                            <i class="fa fa-cc-mastercard"style="color:red"></i>
+                            <i class="fa fa-cc-discover" style="color:orange"></i>
+                          </div>
+                          <label for="cardName">Name on card</label>
+                          <input type="text" name="cardName" id="cardName">
+                          <label for="accountNumber">Account number</label>
+                          <input type="text" name="accountNumber" id="accountNumber" placeholder="2345-1234-1234">
+                          <label for="expiryDate">Expiry date</label>
+                          <input type="text" name="expiryDate" id="expiryDate" placeholder="mm-yy">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" >
+                            </div>
+                            
+                          </div>
+
+                      </div>
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="button" onclick="pay()" value="Proceed to pay" class="btn checkout">
+              </form>
+            </div>
+           </div>
+             
+              <div class="col-4">
+                <div id="checkout" class="container c">
+                  <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b id="co"></b></span></h4>
+                  
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+   
+    <footer class="bg-secondary mt-5">
+        <div class="container">
+          <div class="row justify-content-around">
+              <div class="col-4 mb-4">
+                <div class="card h-100 border-0">
+                  <div class="card-body bg-secondary p-4">
+                    <h5 class="card-title text-info">About us</h5>
+                    <p class="card-text text-light">Snacks point is a multi cuisine restaurant with wide range of varieties of snacks.</p> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <div class="card h-100 border-0">
+                  <div class="card-body bg-secondary p-4">
+                   
+                    <h5 class="card-title text-info">Contact</h5>
+                    <p class="card-text text-light">Address: 9898 Miramisa Blvd</p>
+                    <p class="card-text text-light">San Diego, CA-92345</p>
+                    <p class="card-text text-light">Phone:+1 9876543211</p>
+                    <p class="card-text text-light">e-mail:snackerspoint@gmail.com</p>
+                    
+                  </div>
+                </div>
+              </div>
+         
+          
+            <div class="col-4 mb-4">
+              <div class="card h-100 border-0">
+                <div class="card-body bg-secondary p-4">
+                  
+                    <h5 class="card-title text-info">Open Hours</h5>
+                    <p class="card-text text-light">Mon: 10:30am - 02:30pm & 04:30pm - 09:30pm</p>
+                    <p class="card-text text-light">Tue: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                    <p class="card-text text-light">Wed: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                    <p class="card-text text-light">Thur: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                    <p class="card-text text-light">Fri: 09:30am - 09:30pm</p>
+                    <p class="card-text text-light">Sat: 09:00am - 09:30pm</p>
+                    <p class="card-text text-light">Sun: 09:00am - 09:30pm</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+      </footer>
+      <script src="script_cart.js"></script>
+</body>
+</html>
+</html>

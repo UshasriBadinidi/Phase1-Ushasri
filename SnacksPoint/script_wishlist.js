@@ -16,7 +16,7 @@ function wishList(){
     v.className="card h-100";
     var im=document.createElement('img');
     if(item[i]!=undefined)
-    im.src="/Users/ushasribadinidi/Desktop/SnacksPoint/images/" + item[i]+ext;
+    im.src="SnacksPoint/images/" + item[i]+ext;
 
     im.style.marginRight="20px"
     im.style.width="100px";

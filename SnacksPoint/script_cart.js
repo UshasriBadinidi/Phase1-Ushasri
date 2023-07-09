@@ -17,7 +17,7 @@ function cart(){
     div2.className="card h-100";
     var image=document.createElement('img');
     if(item[i]!=undefined)
-    image.src="/Users/ushasribadinidi/Desktop/SnacksPoint/images/" + item[i]+ext;
+    image.src="SnacksPoint/images/" + item[i]+ext;
     image.style.marginRight="20px"
     image.style.width="100px";
     image.style.height="100px";

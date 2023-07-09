@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks Point-Services
+    </title>
+    <link rel="shortcut icon" type="image/png" href="images/logo-transparent-png 2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <heading>
+    <img src="images/logo-transparent-png.png" alt="logo" height="120px" width="320px" id="logo">
+ </heading>
+ <nav id="navigation">
+   <a class="navigationLinks" href="About.html">About</a>
+   <a class="navigationLinks" href="Services.html">Services</a>
+   <a class="navigationLinks" href="Your_Orders.html">Your Orders</a>
+   <a class="navigationLinks" href="Wishlists.html">Wishlists</a>
+   <a class="navigationLinks" href="Cart.html">Cart</a>
+   <a class="navigationLinks" href="Contact.html">Contact</a>
+   <a class="navigationLinks" href="Checkout.html">Checkout</a>
+</nav>
+    <nav class="d-flex flex-column align-items-end w-25 ml-5 pl-5 float-end">
+      <h2 class="mx-4" style="color: palevioletred;">Go For Food <span>Hunt</span></h2>
+      <table class="mx-5">
+          <tr>
+              <td><img class="menu_image" src="images/Mutton Biryani.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn active-btn" id="Biryanis" type="button">Biryani</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/chicken.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="Chicken" type="button">Chicken</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/paneer.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="Paneer" type="button>Paneer">Paneer</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/vegetable.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="Veg" type="button">Vegetable</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/chineese.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="Chineese" type="button">Chineese</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/south_indian.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="South-Indian" type="button">South Indian</button></td>
+          </tr>
+          <tr>
+              <td><img class="menu_image" src="images/pizza.jpeg" height="65px" width="65px"></td>
+              <td> <button  class="menu_btn" id="Pizzas" type="button">Pizza</button></td>
+          </tr>
+      </table>
+     
+      
+  </nav>
+  <section id="servicesSection">
+    <h1 id="heading1" onmouseout="hideServices()" onmouseover="showServices()">Our Services</h1>
+  
+        <div id="services" class="row justify-content-around">
+            <div class="col-10 mb-4">
+              <div class="card h-100 border-0">
+                <div class="card-body bg-light p-4">
+                  <h5 class="card-title text-info">Dine-In</h5>
+                  <p class="card-text text-secondary">We serve our dishes hot at the restaurant. You can order food by visiting the restaurant and have food at tables.</p> 
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mb-4">
+              <div class="card h-100 border-0">
+                <div class="card-body bg-light p-4">
+                  <h5 class="card-title text-info">Take-away</h5>
+                  <p class="card-text text-secondary">You can order food by calling us and pick up the parcel by coming to restaurant. Preparation time will be informed in call when you order food. You can pay after you receive parcel.</p>      
+                </div>
+              </div>
+            </div>
+       
+        
+          <div class="col-10 mb-4">
+            <div class="card h-100 border-0">
+              <div class="card-body bg-light p-4">
+                
+                  <h5 class="card-title text-info">Order Online</h5>
+                  <p class="card-text text-secondary">You can order food online from the menu through our website from anywhere. We will deliver the food at your doorstep.</p>
+                  
+              </div>
+            </div>
+          </div>
+          </div>
+          
+    
+</section>
+
+  <div id="menu_items" class="w-50">
+      <div class="row">
+        <h1 id="Category"></h1>
+          <div class="col-4 mb-4 mt-4 food-item Biryanis">
+            <div class="card h-100">
+              <div id="dish1" class="card-body">
+                  <button type="button" id="heart1" value="0" class="btn btn-info text-light rounded-circle float-end">
+                     ♡
+                  </button>
+                  <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button> 
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Mutton Biryani.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Mutton Biryani</h5>
+                <p class="card-text text-center">Price:<span class="price">15.5</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 mt-4 food-item Biryanis">
+            <div class="card h-100">
+              <div class="card-body">
+                  <button type="button" id="heart2" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star2" class="btn btn-secondary star">☆4.2</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken Dum Biryani.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Chicken Dum Biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">16</span>$</p>
+                   <button type="button" id="cart2" class="btn btn-secondary col-12">Add to cart</button>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 mt-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart3" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star3" class="btn btn-secondary star">☆4.4</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Fish biryani.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Fish biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">15</span>$</p>
+                   <button type="button" id="cart3" class="btn btn-secondary col-12">Add to cart</button>
+                   
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart4" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star4" class="btn btn-secondary star">☆4.2</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Prawns biryani.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Prawns biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">16.5</span>$</p>
+                   <button type="button" id="cart4" class="btn btn-secondary col-12">Add to cart</button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart5" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star5" class="btn btn-secondary star">☆4.2</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Mushroom Biryani.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Mushroom Biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">14.88</span>$</p>
+                   <button type="button" id="cart5" class="btn btn-secondary col-12">Add to cart</button>
+                   
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart6" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star6" class="btn btn-secondary star">☆4.1</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer biryani.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Paneer biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">15.25</span>$</p>
+                   <button type="button" id="cart6" class="btn btn-secondary col-12">Add to cart</button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart7" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star7" class="btn btn-secondary star">☆4</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Veg Dum Biryani.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Veg Dum Biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">15.5</span>$</p>
+                   <button type="button" id="cart7" class="btn btn-secondary col-12">Add to cart</button>
+                   
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart8" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star8" class="btn btn-secondary star">☆4.5</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken Biryani.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Chicken Biryani<span class="fs-6">(Vijayawada)</span></h5>
+                  <p class="card-text text-center">Price: <span class="price">15.99</span>$</p>
+                   <button type="button" id="cart8" class="btn btn-secondary col-12">Add to cart</button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Biryanis">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart9" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star9" class="btn btn-secondary star">☆4.1</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Natukodi Biryani.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Natukodi Biryani</h5>
+                  <p class="card-text text-center">Price: <span class="price">17</span>$</p>
+                   <button type="button" id="cart9" class="btn btn-secondary col-12">Add to cart</button>
+                   
+                </div>
+              </div>
+            </div>
+            
+        
+              <div class="col-4 mb-4 mt-4 food-item Chicken">
+                <div class="card h-100">
+                  <div id="dish1" class="card-body">
+                    <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4</button> 
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken tikka masala.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Chicken tikka masala</h5>
+                    <p class="card-text text-center">Price:<span class="price">18</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 mt-4 food-item Chicken">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <button type="button" id="heart2" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star2" class="btn btn-secondary star">☆4.2</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken butter masala.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Chicken butter masala</h5>
+                      <p class="card-text text-center">Price<span class="price">17.66</span>$</p>
+                    <button type="button" id="cart2" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 mt-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart3" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star3" class="btn btn-secondary star">☆4.6</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken ghee roast.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Chicken ghee roast</h5>
+                      <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                       <button type="button" id="cart3" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart4" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star4" class="btn btn-secondary star">☆4.4</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken vepudu.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Chicken vepudu</h5>
+                      <p class="card-text text-center">Price:<span class="price">16.88</span>$</p>
+                      <button type="button" id="cart4" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart5" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star5" class="btn btn-secondary star">☆4.5</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Gongura chicken.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Gongura chicken</h5>
+                      <p class="card-text text-center">Price:<span class="price">16.25</span>$</p>
+                       <button type="button" id="cart5" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart6" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star6" class="btn btn-secondary star">☆4.3</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken Lolipop.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Chicken Lolipop</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                      <button type="button" id="cart6" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart7" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star7" class="btn btn-secondary star">☆4.2</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Tandoori chicken drumsticks.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Tandoori chicken drumsticks</h5>
+                      <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                       <button type="button" id="cart7" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart8" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star8" class="btn btn-secondary star">☆4.6</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Dum ka chicken.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Dum ka chicken</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                      <button type="button" id="cart8" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Chicken">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <button type="button" id="heart9" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star9" class="btn btn-secondary star">☆4.3</button> 
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/natukodi Kura.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Natukodi chicken curry</h5>
+                      <p class="card-text text-center">Price:<span class="price">16.88</span>$</p>
+                       <button type="button" id="cart9" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                
+            
+            <div class="col-4 mb-4 mt-4 food-item Chineese">
+              <div class="card h-100">
+                <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Veg momos.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Veg momos</h5>
+                  <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                   <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 mt-4 food-item Chineese">
+              <div class="card h-100">
+                <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Fried momos.jpeg" height="150px" width="150px">
+                    <h5 class="card-title text-center">Fried momos</h5>
+                    <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                  <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 mt-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.6</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Spring rolls.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Spring rolls</h5>
+                    <p class="card-text text-center">Price:<span class="price">18</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Veg Chow Mein.jpeg" height="150px" width="150px">
+                    <h5 class="card-title text-center">Veg Chow Mein</h5>
+                    <p class="card-text text-center">Price:<span class="price">13</span>$</p>
+                    <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Shrimp Chow Mein.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Shrimp Chow Mein</h5>
+                    <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Chicken Chow Mein.jpeg" height="150px" width="150px">
+                    <h5 class="card-title text-center">Chicken Chow Mein</h5>
+                    <p class="card-text text-center">Price:<span class="price">16.5</span>$</p>
+                    <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.6</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Chineese Fried Rice.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Chineese Fried Rice</h5>
+                    <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Hot and Sour soup.jpeg" height="150px" width="150px">
+                    <h5 class="card-title text-center">Hot and Sour soup</h5>
+                    <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                    <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 food-item Chineese">
+                <div class="card h-100">
+                  <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                    <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Chineese Chicken Fried Rice.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Chineese Chicken Fried Rice</h5>
+                    <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              
+        
+          <div class="col-4 mb-4 mt-4 food-item Paneer">
+            <div class="card h-100">
+              <div class="card-body">
+                <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button> 
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer 65.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Paneer 65</h5>
+                <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                 <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 mt-4 food-item Paneer">
+            <div class="card h-100">
+              <div class="card-body">
+                <button type="button" id="heart2" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star2" class="btn btn-secondary star">☆4.2</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer Tikka.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Paneer Tikka</h5>
+                  <p class="card-text text-center">Price:<span class="price">12.5</span>$</p>
+                <button type="button" id="cart2" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 mt-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart3" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star3" class="btn btn-secondary star">☆4.3</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Chilli Paneer.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Chilli Paneer</h5>
+                  <p class="card-text text-center">Price:<span class="price">12.5</span>$</p>
+                   <button type="button" id="cart3" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart4" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star4" class="btn btn-secondary star">☆4.1</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer Butter Masala.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Paneer Butter Masala</h5>
+                  <p class="card-text text-center">Price:<span class="price">15.5</span>$</p>
+                  <button type="button" id="cart4" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart5" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star5" class="btn btn-secondary star">☆4</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Kadai Paneer.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Kadai Paneer</h5>
+                  <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                   <button type="button" id="cart5" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart6" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star6" class="btn btn-secondary star">☆4.4</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Tawa Paneer.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Tawa Paneer</h5>
+                  <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                  <button type="button" id="cart6" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart7" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star7" class="btn btn-secondary star">☆4.5</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Palak Paneer.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Palak Paneer</h5>
+                  <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+                   <button type="button" id="cart7" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item Paneer">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart8" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star8" class="btn btn-secondary star">☆4.2</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Matar Paneer.jpeg" height="150px" width="150px">
+                  <h5 class="card-title text-center">Matar Paneer</h5>
+                  <p class="card-text text-center">Price:<span class="price">13</span>$</p>
+                  <button type="button" id="cart8" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4 food-item">
+              <div class="card h-100">
+                <div class="card-body">
+                  <button type="button" id="heart9" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                  <button type="button" id="star9" class="btn btn-secondary star">☆4.4</button> 
+                  <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer Frankie.jpeg" height="150px" width="150px">  
+                  <h5 class="card-title text-center">Paneer Frankie</h5>
+                  <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+                   <button type="button" id="cart9" class="btn btn-secondary col-12">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            
+        
+        <div class="col-4 mb-4 mt-4 food-item Pizzas">
+          <div class="card h-100">
+            <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Healthy Vegan Pizza.jpeg" height="150px" width="150px">  
+              <h5 class="card-title text-center">Healthy Vegan Pizza</h5>
+              <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+               <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 mt-4 food-item Pizzas">
+          <div class="card h-100">
+            <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Butter Chicken Pizza.jpeg" height="150px" width="150px">
+                <h5 class="card-title text-center">Butter Chicken Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">18</span>$</p>
+              <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 mt-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Paneer Naan Pizza.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Paneer Naan Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">17.66</span>$</p>
+                 <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Tandoori Mushroom Pizza.jpeg" height="150px" width="150px">
+                <h5 class="card-title text-center">Tandoori Mushroom Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Garden Vegetable Thin crust Pizza.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Garden Vegetable Thin crust Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                 <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.4</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Margherita Pizza.jpeg" height="150px" width="150px">
+                <h5 class="card-title text-center">Margherita Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">18</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Tandoori chicken pizza.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Tandoori chicken pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">19</span>$</p>
+                 <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Sweet Corn Pizza.jpeg" height="150px" width="150px">
+                <h5 class="card-title text-center">Sweet Corn Pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mb-4 food-item Pizzas">
+            <div class="card h-100">
+              <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                <img class="card-image rounded-circle mx-auto d-block" src="images/Whole wheat pizza.jpeg" height="150px" width="150px">  
+                <h5 class="card-title text-center">Whole wheat pizza</h5>
+                <p class="card-text text-center">Price:<span class="price">15.88</span>$</p>
+                 <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+     
+      <div class="col-4 mb-4 mt-4 food-item South-Indian">
+        <div class="card h-100">
+          <div class="card-body">
+            <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.6</button>
+            <img class="card-image rounded-circle mx-auto d-block" src="images/Dosa.jpeg" height="150px" width="150px">  
+            <h5 class="card-title text-center">Dosa</h5>
+            <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+              <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mb-4 mt-4 food-item South-Indian">
+        <div class="card h-100">
+          <div class="card-body">
+            <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Idli.jpeg" height="150px" width="150px">
+              <h5 class="card-title text-center">Idli</h5>
+              <p class="card-text text-center">Price:<span class="price">10</span>$</p>
+             <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 mb-4 mt-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Vada.jpeg" height="150px" width="150px">  
+              <h5 class="card-title text-center">Vada</h5>
+              <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Sambar.jpeg" height="150px" width="150px">
+              <h5 class="card-title text-center">Sambar</h5>
+              <p class="card-text text-center">Price:<span class="price">9</span>$</p>
+               <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Rasam.jpeg" height="150px" width="150px">  
+              <h5 class="card-title text-center">Rasam</h5>
+              <p class="card-text text-center">Price:<span class="price">9</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.4</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Pongal.jpeg" height="150px" width="150px">
+              <h5 class="card-title text-center">Pongal</h5>
+              <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+               <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Pulihora.jpeg" height="150px" width="150px">  
+              <h5 class="card-title text-center">Pulihora</h5>
+              <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Guthi Vankaya Curry.jpeg" height="150px" width="150px">
+              <h5 class="card-title text-center">Guthi Vankaya Curry</h5>
+              <p class="card-text text-center">Price:<span class="price">15</span>$</p>
+               <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4 food-item South-Indian">
+          <div class="card h-100">
+            <div class="card-body">
+              <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+              <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+              <img class="card-image rounded-circle mx-auto d-block" src="images/Uthappam.jpeg" height="150px" width="150px">  
+              <h5 class="card-title text-center">Uthappam</h5>
+              <p class="card-text text-center">Price:<span class="price">12</span>$</p>
+                <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+            </div>
+          </div>
+        </div>
+       
+              <div class="col-4 mb-4 mt-4 food-item Veg">
+                <div class="card h-100">
+                  <div class="card-body"> 
+                    <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                    <img class="card-image rounded-circle mx-auto d-block" src="images/Veg Manchuria.jpeg" height="150px" width="150px">  
+                    <h5 class="card-title text-center">Veg Manchuria</h5>
+                    <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+                     <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 mt-4 food-item Veg">
+                <div class="card h-100">
+                  <div class="card-body"> 
+                    <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Gobi Manchuria.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Gobi Manchuria</h5>
+                      <p class="card-text text-center">Price:<span class="price">15</span>$</p>
+                    <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4 mt-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Corn Manchuria.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Corn Manchuria</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                       <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Mixed Veg Curry.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Mixed Veg Curry</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                      <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.3</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Chana Masala.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Chana Masala</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                       <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.2</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Mushroom curry.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Mushroom curry</h5>
+                      <p class="card-text text-center">Price:<span class="price">16</span>$</p>
+                      <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Aloo Matar.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Aloo Matar</h5>
+                      <p class="card-text text-center">Price:<span class="price">15</span>$</p>
+                       <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4.1</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Aloo Baingan.jpeg" height="150px" width="150px">
+                      <h5 class="card-title text-center">Aloo Baingan</h5>
+                      <p class="card-text text-center">Price:<span class="price">14</span>$</p>
+                      <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-4 food-item Veg">
+                  <div class="card h-100">
+                    <div class="card-body"> <button type="button" id="heart1" class="btn btn-info text-light rounded-circle float-end">♡</button>
+                      <button type="button" id="star1" class="btn btn-secondary star">☆4</button>
+                      <img class="card-image rounded-circle mx-auto d-block" src="images/Veg Frankie.jpeg" height="150px" width="150px">  
+                      <h5 class="card-title text-center">Veg Frankie</h5>
+                      <p class="card-text text-center">Price:<span class="price">17</span>$</p>
+                       <button type="button" id="cart1" class="btn btn-secondary col-12">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                
+           
+        
+    </div>
+
+</div>
+       
+        
+    </nav>
+    
+    <footer class="bg-secondary mt-5">
+      <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-4 mb-4">
+              <div class="card h-100 border-0">
+                <div class="card-body bg-secondary p-4">
+                  <h5 class="card-title text-info">About us</h5>
+                  <p class="card-text text-light">Snacks point is a multi cuisine restaurant with wide range of varieties of snacks.</p> 
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-4">
+              <div class="card h-100 border-0">
+                <div class="card-body bg-secondary p-4">
+                 
+                  <h5 class="card-title text-info">Contact</h5>
+                  <p class="card-text text-light">Address: 9898 Miramisa Blvd</p>
+                  <p class="card-text text-light">San Diego, CA-92345</p>
+                  <p class="card-text text-light">Phone:+1 9876543211</p>
+                  <p class="card-text text-light">e-mail:snackerspoint@gmail.com</p>
+                  
+                </div>
+              </div>
+            </div>
+       
+        
+          <div class="col-4 mb-4">
+            <div class="card h-100 border-0">
+              <div class="card-body bg-secondary p-4">
+                
+                  <h5 class="card-title text-info">Open Hours</h5>
+                  <p class="card-text text-light">Mon: 10:30am - 02:30pm & 04:30pm - 09:30pm</p>
+                  <p class="card-text text-light">Tue: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                  <p class="card-text text-light">Wed: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                  <p class="card-text text-light">Thur: 11:00am - 02:30pm & 05:00pm - 09:30pm</p>
+                  <p class="card-text text-light">Fri: 09:30am - 09:30pm</p>
+                  <p class="card-text text-light">Sat: 09:00am - 09:30pm</p>
+                  <p class="card-text text-light">Sun: 09:00am - 09:30pm</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

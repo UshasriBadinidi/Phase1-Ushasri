@@ -128,7 +128,7 @@ function cart(){
    button.style.backgroundColor="green";
    button.style.borderRadius="10px";
    var anchor=document.createElement("a");
-   anchor.href="/Users/ushasribadinidi/Desktop/Snackspoint/Checkout.html";
+   anchor.href="Checkout.html";
    anchor.innerText="Go to Checkout";
    anchor.style.color="white";
    anchor.style.textDecoration="none";
